@@ -1,0 +1,86 @@
+.body > * { max-width: 1920px; margin-left: auto; margin-right: auto;}
+.body > header {
+    background: /* url(../img/virtualni-prohlidka-screenshot-portrait.jpg) */ bottom center / cover no-repeat fixed #ffffff;
+    padding-bottom: 1em;
+}
+.body > footer p { margin: 0; }
+/* .top-nav a span,  */
+.top-nav a.logo-spsse span { display: none; }
+.top-nav { overflow: hidden; } /* on hover scale correction */
+
+.content { 
+    padding: 0 1em 1em;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dotaznik { 
+    border: none; 
+    width: 100%;
+    height: 560px;
+    max-width:765px; 
+    max-height:100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* mobile landscape */
+@media only screen and (min-width: 480px)
+{
+    .content dt { margin: 1em 0 .5em; }
+}
+/* tablet portrait */
+@media only screen and (min-width: 760px)
+{
+    html { font-size: 110%; }
+    h1 { font-size: 3.25em; }
+    h2 { font-size: 1.8em; }
+    .hamburger-row { display: none; }
+    .hamburger-nav { border: none; }
+    .hamburger-nav ul { height: auto; }
+    .hamburger-nav li:first-child { display: block; }
+    .body > header { background-image: url(../img/vzor-pozadi-light.svg); }
+    .top-nav > ul { flex-direction: row; }
+    .top-nav li { padding: 0; }
+    .top-nav li:nth-child(even) { background-color: transparent; }
+    .top-nav a { padding: .5em; font-size: 1.175em; } 
+    .top-nav a span { display: inline-block; }
+    [class^="img-"]:hover { transform: scale(1.05); }
+    [class^="img-"]::before, [class*=" img-"]::before { content: none; }
+    .img-smile::before { content: ""; }
+    .logo-spsse::before { background-image: url("../img/spsse-logo-262x70.svg");
+                          font-size: 1em; width: 7em; height: 2em; }
+    .livecards { flex-flow: row wrap;
+                 justify-content: center; }
+    .buttons { display: flex; justify-content: space-between; max-width: 900px; margin: 0 auto; } 
+    .obory { display: flex; justify-content: center; }
+    .obory .obor { display: flex; flex-direction: column; flex-basis: 400px; flex-grow: 1; }
+    .obory .obor > dl { flex-grow: 1; }
+    .buttons > *,
+    .obory .obor > footer { margin-left: .2em; }
+    .obory .obor h3 { background-color: transparent; text-transform: uppercase; }
+    .obory .str h3 { color: #357BC2; /*IE*/ color: var(--strblue); }
+    .obory .ele h3 { color: #00AA80; /*IE*/ color: var(--elgreen); }
+    .obory .it h3 { color: #D90000; /*IE*/ color: var(--itred); }
+    .faq { display: flex; margin: 0 auto; }
+    .faq > * { flex-basis: 260px; flex-grow: 1; padding: 1em 1.5em}
+}
+
+/* tablet landscape */
+@media only screen and (min-width: 960px)
+{
+    html { font-size: 115%; }
+    .header-intro {
+        max-width: 75%;
+        margin: 2em auto;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1200px)
+{
+    html { font-size: 105%; }
+    #zakladni-informace h3 {text-align: left; padding: 2em 0 0.5em 0;}
+    .body > header { background-image: url(../img/vzor-pozadi-light.svg); background-size: cover; }
+}

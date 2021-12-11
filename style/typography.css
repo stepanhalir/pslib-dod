@@ -1,0 +1,90 @@
+:root {
+    --black: #2B2B2B;
+    --white: #E5E5E5;
+    --extrawhite: #F0F0F0;
+    --blue: #2F65B0;
+    --red: #ED1F1F;
+    --yellow: #F58529;
+    --strblue: #357BC2;
+    --elgreen: #00AA80;
+    --itred: #D90000;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Gilroy, sans-serif;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1em;
+}
+h1 span {
+    display: block;
+    text-transform: initial;
+    font-size: .7em;
+}
+
+h2 {
+    font-size: 1.35em;
+    text-align: center;
+    padding: 1.5em 0 .75em;
+}
+
+h2 span {
+    color: #00AA80; /*IE*/
+    color: var(--elgreen);
+}
+
+h3 {
+    font-size: 1.25em;
+    text-align: center;
+    padding: 0.75em 1em;
+}
+
+h3 span {
+    color: #ED1F1F; /*IE*/
+    color: var(--red);
+}
+
+p {
+    text-align: left;
+    /* text-align-last: center; */
+}
+
+/* default nav list */
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: block;
+}
+nav a {
+    font-family: Gilroy, sans-serif;
+    font-weight: 300;
+    color: #25211F; /*IE*/
+    color: var(--black);
+    display: block;
+
+}
+nav a:hover {
+    color: #2F65B0; /*IE*/
+    color: var(--blue);
+    /* font-weight: 800; */
+    text-decoration: overline;
+}
