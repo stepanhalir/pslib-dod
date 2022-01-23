@@ -1,6 +1,6 @@
 .body > * { max-width: 1920px; margin-left: auto; margin-right: auto;}
 .body > header {
-    background: /* url(../img/virtualni-prohlidka-screenshot-portrait.jpg) */ bottom center / cover no-repeat fixed #ffffff;
+    background: url("../img/virtualni-prohlidka-screenshot-portrait.jpg") bottom center / cover no-repeat fixed #ffffff;
     padding-bottom: 1em;
 }
 .body > footer p { margin: 0; }
@@ -40,7 +40,7 @@
     .hamburger-nav { border: none; }
     .hamburger-nav ul { height: auto; }
     .hamburger-nav li:first-child { display: block; }
-    .body > header { background-image: url(../img/vzor-pozadi-light.svg); }
+    .body > header { background-image: url("../img/virtualni-prohlidka-screenshot-960.jpg"); }
     .top-nav > ul { flex-direction: row; }
     .top-nav li { padding: 0; }
     .top-nav li:nth-child(even) { background-color: transparent; }
@@ -82,5 +82,5 @@
 {
     html { font-size: 105%; }
     #zakladni-informace h3 {text-align: left; padding: 2em 0 0.5em 0;}
-    .body > header { background-image: url(../img/vzor-pozadi-light.svg); background-size: cover; }
+    .body > header { background-image: url("../img/virtualni-prohlidka-screenshot-1920.jpg"); background-size: cover; }
 }

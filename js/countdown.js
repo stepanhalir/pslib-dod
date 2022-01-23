@@ -1,4 +1,4 @@
-let odpocetDatum = new Date("December 15, 2021 08:00:00").getTime();
+let odpocetDatum = new Date("January 29, 2022 10:00:00").getTime();
 let dayElm = document.getElementById("day");
 let hourElm = document.getElementById("hour");
 let minuteElm = document.getElementById("minute");
